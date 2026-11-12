@@ -5,7 +5,7 @@ public class Program
     public static void Main(string[] args)
     {
 
-      //Luodaan lista tuotteille ja niiden hinnoille
+      //Luodaan lista tuotteille ja niiden hinnoille. Voiko nämä poistaa?
     List<string> tuotteet = new List<string>();
 
     tuotteet.Add("maito");
@@ -36,7 +36,15 @@ public class Program
 
     ostoskori.Add (tuote);
     }
+  List<double> Hinnat = new List<double>();
 
+  while (true) 
+  {
+      Console.WriteLine("Lisää tuotteiden hinnat ostoskoriin tai kirjoita 'kassalle' mennäksesi kassalle:");
+      string hinta = Console.ReadLine();
+      if (hinta == "kassalle")
+      {break;}
+  }
     //käydään läpi ostoskori ja tulostetaan tuotteet
     Console.WriteLine ("Ostoskorisi sisältää seuraavat tuotteet: ");
 
