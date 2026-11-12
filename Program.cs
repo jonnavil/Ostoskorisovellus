@@ -19,6 +19,10 @@ public class Program
     hinnat.Add(3.00);
     hinnat.Add(4.00);
 
+    Console.WriteLine("Tervetuloa ostoskoriin! Tässä on tuotteet ja niiden hinnat: ");
+    Console.WriteLine("Tuote & hinta:");
+    Console.WriteLine("maito/1.50, leipä/2.00, voi/3.00, juusto/4.00");
+
     //luodaan ostoskori, johon käyttäjä voi lisätä tuotteita
     List<string> ostoskori = new List<string>();
 
