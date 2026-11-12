@@ -1,5 +1,5 @@
-﻿using System.Collections;
-
+﻿using System;
+using System.Collections.Generic;
 public class Program
 {
     public static void Main(string[] args)
@@ -30,7 +30,7 @@ public class Program
     while (true)
     {
       Console.WriteLine("Lisää kolme tuotetta ostoskoriin tai kirjoita 'kassalle' mennäksesi kassalle:");
-      string tuote = Console.ReadLine();
+      string tuote = (Console.ReadLine());
       if (tuote == "kassalle")
       {break;}
 
@@ -39,19 +39,19 @@ public class Program
     //käyttäjältä kysytään tuotteiden hinnat 
   List<double> Hinnat = new List<double>();
 
-  
-  {
       Console.WriteLine("Lisää tuotteiden hinnat ostoskoriin, kirjoita 'valmis' mennäksesi kassalle:");
-      string hinta1 = Console.ReadLine();
-      string hinta2 = Console.ReadLine();
-      string hinta3 = Console.ReadLine();
+      double hinta1 = Convert.ToDouble(Console.ReadLine());
+      double hinta2 = Convert.ToDouble(Console.ReadLine());
+      double hinta3 = Convert.ToDouble(Console.ReadLine());
+
+      double sum = hinta1 + hinta2 + hinta3;
       
-  }
     //käydään läpi ostoskori ja tulostetaan tuotteet
     Console.WriteLine ("Ostoskorisi sisältää seuraavat tuotteet: ");
+    Console.WriteLine ("Ostoskorin summa: " + sum);
 
     foreach (string tuote in ostoskori)
     Console.WriteLine (tuote);
-
+      }
+    }
   
-    double sum = hinta1 + hinta2 + hinta3;
