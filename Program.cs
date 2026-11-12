@@ -29,27 +29,32 @@ public class Program
   
     while (true)
     {
-      Console.WriteLine("Lisää tuotteet ostoskoriin tai kirjoita 'kassalle' mennäksesi kassalle:");
+      Console.WriteLine("Lisää kolme tuotetta ostoskoriin tai kirjoita 'kassalle' mennäksesi kassalle:");
       string tuote = Console.ReadLine();
       if (tuote == "kassalle")
       {break;}
 
     ostoskori.Add (tuote);
     }
+    //käyttäjältä kysytään tuotteiden hinnat 
   List<double> Hinnat = new List<double>();
 
-  while (true) 
+  
   {
-      Console.WriteLine("Lisää tuotteiden hinnat ostoskoriin tai kirjoita 'kassalle' mennäksesi kassalle:");
-      string hinta = Console.ReadLine();
-      if (hinta == "kassalle")
-      {break;}
+      Console.WriteLine("Lisää tuotteiden hinnat ostoskoriin, kirjoita 'valmis' mennäksesi kassalle:");
+      string hinta1 = Console.ReadLine();
+      string hinta2 = Console.ReadLine();
+      string hinta3 = Console.ReadLine();
+      
   }
     //käydään läpi ostoskori ja tulostetaan tuotteet
     Console.WriteLine ("Ostoskorisi sisältää seuraavat tuotteet: ");
 
     foreach (string tuote in ostoskori)
     Console.WriteLine (tuote);
+
+  
+    double sum = hinta1 + hinta2 + hinta3;
 
     Console.WriteLine ("Ostoskorin summa yhteensä");
     }
